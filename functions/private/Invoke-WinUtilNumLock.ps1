@@ -8,11 +8,11 @@ function Invoke-WinUtilNumLock {
     Param($Enabled)
     Try{
         if ($Enabled -eq $false){
-            Write-Host "Enabling Numlock on startup"
+            Write-Host "Disabling Numlock on startup"
             $value = 2
         }
         else {
-            Write-Host "Disabling Numlock on startup"
+            Write-Host "Enabling Numlock on startup"
             $value = 0
         }
         New-PSDrive -PSProvider Registry -Name HKU -Root HKEY_USERS
