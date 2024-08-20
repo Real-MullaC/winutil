@@ -68,9 +68,9 @@ graph TD
 ### Fork the Repo
 * Fork the WinUtil Repository [here](https://github.com/ChrisTitusTech/winutil) to create a copy that will be available in your repository list.
 
-![Fork Image](assets/Fork-Button-Dark.png#only-dark)
+![Fork Image](/assets/Fork-Button-Dark.png#only-dark)
 
-![Fork Image](assets/Fork-Button-Light.png#only-light)
+![Fork Image](/assets/Fork-Button-Light.png#only-light)
 
 ### Clone the Fork
 !!! tip
@@ -94,18 +94,18 @@ graph TD
 * Run the following command to compile and run WinUtil:
 * `.\Compile.ps1 -run`
 
-![Compile](assets/Compile.png)
+![Compile](/assets/Compile.png)
 
 * After seeing that your changes work properly, feel free to commit the changes to the repository and make a PR. For help on that, follow the documentation below.
 
 ### Committing the changes
 * Before committing your changes, please discard changes made to the `winutil.ps1` file, like the following:
 
-![Push Commit Image](assets/Discard-GHD.png)
+![Push Commit Image](/assets/Discard-GHD.png)
 
 * Now, commit your changes once you are happy with the result.
 
-![Commit Image](assets/Commit-GHD.png)
+![Commit Image](/assets/Commit-GHD.png)
 
 * Push the changes to upload them to your fork on github.com.
 
