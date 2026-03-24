@@ -1427,7 +1427,7 @@
                                                Visibility="Collapsed"/>
                                 </StackPanel>
 
-                                <!-- Right: Download guidance -->
+                                <!-- Middle: Download guidance -->
                                 <Border Grid.Column="1"
                                         Background="{DynamicResource MainBackgroundColor}"
                                         BorderBrush="{DynamicResource BorderColor}"
@@ -1459,6 +1459,30 @@
                                         </TextBlock>
                                         <Button Name="WPFWin11ISODownloadLink"
                                                 Content="Open Microsoft Download Page"
+                                                HorizontalAlignment="Left"
+                                                Width="Auto" Padding="12,0"
+                                                Height="{DynamicResource ButtonHeight}"/>
+                                    </StackPanel>
+                                </Border>
+                                <!-- Right: Download guidance -->
+                                <Border Grid.Column="1"
+                                        Background="{DynamicResource MainBackgroundColor}"
+                                        BorderBrush="{DynamicResource BorderColor}"
+                                        BorderThickness="1" CornerRadius="5"
+                                        Margin="5" Padding="15">
+                                    <StackPanel>
+                                        <TextBlock FontSize="{DynamicResource FontSize}"
+                                                   Foreground="{DynamicResource MainForegroundColor}"
+                                                   TextWrapping="Wrap" Margin="0,0,0,8">
+                                            If you would like to use MicroWin, please click the button below to launch.
+                                        </TextBlock>
+                                        <Button Name="WPFLaunchMicroWin"
+                                                Content="Launch MicroWin"
+                                                HorizontalAlignment="Left"
+                                                Width="Auto" Padding="12,0"
+                                                Height="{DynamicResource ButtonHeight}"/>
+                                        <Button Name="WPFMicroWinRepo"
+                                                Content="Report MicroWin issues here"
                                                 HorizontalAlignment="Left"
                                                 Width="Auto" Padding="12,0"
                                                 Height="{DynamicResource ButtonHeight}"/>
