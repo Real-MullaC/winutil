@@ -555,9 +555,14 @@ $sync["WPFWin11ISOBrowseButton"].Add_Click({
     Invoke-WinUtilISOBrowse
 })
 
-$sync["WPFWin11ISODownloadLink"].Add_Click({
-    Write-Debug "WPFWin11ISODownloadLink clicked"
-    Start-Process "https://www.microsoft.com/software-download/windows11"
+$sync["WPFLaunchMicroWin"].Add_Click({
+    Write-Debug "WPFLaunchMicroWin clicked"
+    Start-Process -FilePath "powershell.exe" -ArgumentList "irm -ExecutionPolicy Bypass -Command 'iwr -useb https://raw.githubusercontent.com/CodingWonders/MicroWin/refs/heads/main/Microwin.ps1 | iex'"
+})
+
+$sync["WPFMicroWinRepo"].Add_Click({
+    Write-Debug "WPFMicroWinRepo clicked"
+    Start-Process "https://github.com/CodingWonders/MicroWin"
 })
 
 $sync["WPFWin11ISOMountButton"].Add_Click({
